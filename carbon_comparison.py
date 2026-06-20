@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Compare total CO2 emissions across the bias-weight sweep for two scenarios:
 a 3 Gt cumulative CO2 budget vs. an unconstrained (no CO2 limit) run.
 

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Consolidated figure script for the semester-project report sections
 "Influence of the bias term" and "Policy evaluation".
@@ -519,7 +517,7 @@ def fig7_profitability_vs_additions(A, rs, out_dir):
         ax.annotate(TECH_LABEL[t], (pi0[t], d), textcoords="offset points", xytext=(ox, oy), fontsize=11, ha=ha)
     ax.axhline(0, color="#999", lw=0.8, ls="--"); ax.axvline(0, color="#999", lw=0.8, ls="--")
     ax.set_xlabel("Clean year-0 profitability $\\Pi$  [MEUR/GW]")
-    ax.set_ylabel(f"$\\Delta$ capacity additions,  $\\omega{{:}}\\,0\\!\\to\\!{omega_hi:g}$  [GW resp. GWh]")
+    ax.set_ylabel(f"$\\Delta$ capacity additions,  $\\omega{{:}}\\,0\\!\\to\\!{omega_hi:g}$  [GW]")
     ax.set_title(f"(a)  Do additions follow $\\Pi$?  $\\rho_{{\\mathrm{{Spearman}}}}={rho:.2f}$ (non-ceiling)")
     ax.legend(handles=[Line2D([0], [0], marker="o", ls="", mfc="#888", mec="#333", label="can expand"),
                        Line2D([0], [0], marker="D", ls="", mfc="none", mec="#333", label="at potential ceiling")],
