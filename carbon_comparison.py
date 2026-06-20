@@ -1,12 +1,11 @@
-"""Compare total CO2 emissions across the bias-weight sweep for two scenarios:
+"""
+Creates the figure for the report for the influence of the CO2 budget.
+
+Compare total CO2 emissions across the bias-weight sweep for two scenarios:
 a 3 Gt cumulative CO2 budget vs. an unconstrained (no CO2 limit) run.
 
 Only no-policy runs are considered (subsidies == 'none'). Emissions are the
 cumulative carbon emissions over the modelling horizon (2022-2050).
-
-The figure styling matches report_figures / without_co2_cap.py: a categorical
-bias-weight axis with the green "valid range" and red "degenerate" shading, the
-shared colour palette, and PNG/PDF/SVG output.
 
 Usage (defaults to the bundled case-study runs when launched without arguments):
     python carbon_comparison.py \

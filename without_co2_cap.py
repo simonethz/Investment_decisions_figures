@@ -1,20 +1,17 @@
 """
-Consolidated figure script for the semester-project report sections
-"Influence of the bias term" and "Policy evaluation".
+Figure script for the semester-project report. 
 
-Generates exactly the figures referenced in those two sections:
+Generates the figures for evaluating the results and for the report:
 
   fig1   bias weight vs. total system cost AND total capacity additions (no policy)
   fig3   capacity additions per technology vs. bias weight (no policy, small multiples)
   fig4   policy effect on the targeted technology (lambda in [0, 1])
-  fig5   subsidy-instrument comparison: steering effect + system-cost side effect
+  (fig5   subsidy-instrument comparison: steering effect + system-cost side effect, not used in the report)
   fig6a  clean year-0 profitability index pi per technology (lambda-invariant)
   fig7   profitability index vs. capacity additions (alignment + heat-sector switch)
   fig8a  endogeneity of pi: total pi vs. lambda by decision year (valid range)
 
 Reads the case-study outputs (run_summary.csv + the profitability_*.csv files).
-All cost axes are shown in billion EUR (= total_cost / 1e3), assuming the model
-cost unit is MEUR (see the report text / the data appendix).
 
 Usage:
     python report_figures.py --data-dir /path/to/run --out-dir /path/to/figures
